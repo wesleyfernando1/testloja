@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>UrbanStyle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>UrbanStyle</h1>
+  </header>
+
+  <main>
+    <section class="produto">
+      <img src="imagens/camiseta1.jpg" alt="Camiseta Oversized Preta" />
+      <h2>Camiseta Oversized Preta</h2>
+      <p>R$ 89,90</p>
+      <button onclick="adicionarAoCarrinho('Camiseta Oversized Preta', 89.90)">Adicionar ao Carrinho</button>
+    </section>
+
+    <section class="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="itens-carrinho"></ul>
+      <p>Total: R$ <span id="total">0.00</span></p>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
